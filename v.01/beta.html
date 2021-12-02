@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+    <title>superadmin mock v.01</title>
+
+
+    <script src="csv2html.js"></script>
+    <script>
+        var csvtotable = new CsvToTable({
+            csvFile: 'betausers.csv'
+        });
+        csvtotable.run();
+    </script>
+</head>
+
+<body>
+    <h2>
+        show beta users
+    </h2>
+    <ul>
+        <li>add / remove users from beta access</li>
+        <li>list beta access users</li>
+        <li>list user count per feature</li>
+        <li>bulk enable</li>
+        <li></li>
+
+    </ul>
+    <button onclick="CsvToTable('betausers.csv');">Show Results
+    </button>
+    <br>
+    <button onclick="window.location.href='./index.html';">home
+    </button>
+</body>
+
+</html>
